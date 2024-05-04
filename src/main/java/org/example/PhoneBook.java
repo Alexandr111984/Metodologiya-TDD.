@@ -23,8 +23,12 @@ public class PhoneBook {
     }
 
     public String findByNumber(String name) {
-
-
+        for (String names : contact.keySet()) {
+            String number = contact.get(names);
+            if (number.equals(contact.get(names))) {
+                return names;
+            }
+        }
         return null;
     }
 }
