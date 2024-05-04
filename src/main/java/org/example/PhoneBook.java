@@ -29,8 +29,10 @@ public class PhoneBook {
         }
         return null;
     }
-    public String findByName(String namber){
 
-        return null;
+    public String findByName(String name) {
+        contact.get(PhoneBook.contact.get(name));
+        return name;
     }
+
 }
