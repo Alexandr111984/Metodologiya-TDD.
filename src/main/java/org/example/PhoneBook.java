@@ -1,6 +1,9 @@
 package org.example;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class PhoneBook {
     static HashMap<String, String> contact = new HashMap<>();
@@ -35,4 +38,9 @@ public class PhoneBook {
         return name;
     }
 
+    public String printAllNames() {
+       return null;
+    }
+
 }
+
