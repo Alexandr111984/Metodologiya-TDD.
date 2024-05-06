@@ -39,7 +39,10 @@ public class PhoneBook {
     }
 
     public String printAllNames() {
-       return null;
+        TreeMap<String, String> map = new TreeMap<>(PhoneBook.contact);
+        map.putAll(contact);
+        Set<String> keys = map.keySet();
+        return String.valueOf(keys);
     }
 
 }
